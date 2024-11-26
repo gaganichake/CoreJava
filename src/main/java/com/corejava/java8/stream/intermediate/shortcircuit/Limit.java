@@ -1,4 +1,4 @@
-package com.corejava.java8.stream.terminal;
+package com.corejava.java8.stream.intermediate.shortcircuit;
 
 import java.util.Arrays;
 import java.util.List;
@@ -6,7 +6,7 @@ import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 /*
- * Short-circuit Stateful Terminal Operations:
+ * Short-circuit Stateful Intermediate Operations:
  * 
  * Following (limit) is the only one intermediate-short-circuiting method currently defined 
  * in Stream
@@ -59,7 +59,7 @@ public class Limit {
 	    
 //	    stream.limit(5)
 //        .filter(i -> i % 2 == 0)
-//        .forEach(System.out::println);
+//        .forEach(System.out::println); // Error: stream has already been operated upon or closed
 	    //That shows that order matters while performing intermediate operations.
 	}
 

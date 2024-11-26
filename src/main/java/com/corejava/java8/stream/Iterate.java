@@ -7,7 +7,7 @@ public class Iterate {
 	public static void main(String[] args) {
 
 		// Not working
-		IntStream.iterate(1, x -> x+1).filter(x -> x < 20).limit(19).forEach(System.out::println);
+		IntStream.iterate(1, x -> x+1).limit(19).forEach(System.out::println);
 
 		// It is similar to for-loop:
 		// First parameter is init value,

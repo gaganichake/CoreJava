@@ -1,4 +1,4 @@
-package com.corejava.java8.stream.intermediate;
+package com.corejava.java8.stream.terminal.shortcircuit;
 
 import java.util.OptionalInt;
 import java.util.stream.IntStream;
@@ -15,7 +15,7 @@ import java.util.stream.IntStream;
  * in parallel operations; the cost is that multiple invocations on the same source may not 
  * return the same result. (If a stable result is desired, use findFirst() instead."
  * 
- * A deterministic operation will always produces the same output for a given input, regardless 
+ * A deterministic operation will always produce the same output for a given input, regardless
  * of we use parallel or sequential pipeline.
  * 
  * Except for operations identified as explicitly nondeterministic, such as findAny(), whether 

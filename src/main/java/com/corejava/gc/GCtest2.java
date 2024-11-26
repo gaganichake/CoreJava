@@ -10,7 +10,9 @@ public class GCtest2 {
 		//String object referred by str1 is not eligible for GC yet
 
 		str1 = str2;
-		/* Now the str1 variable refers to the String object "Another String" and the object "Garbage collected after use" is not referred by any variable and hence is eligible for GC */
+		/* Now the str1 variable refers to the String object "Another String" and
+		the object "Garbage collected after use" is not referred by any variable
+		and hence now eligible for GC */
 	}
 
 }

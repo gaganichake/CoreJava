@@ -1,6 +1,7 @@
 package com.corejava.java8.stream.intermediate;
 
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -18,6 +19,10 @@ public class Sorted {
 		List<String> result = names.stream().sorted().collect(Collectors.toList());
 		
 		result.forEach(System.out::println);
+
+		List<String> reverseResult = names.stream().sorted(Collections.reverseOrder()).collect(Collectors.toList());
+
+		reverseResult.forEach(System.out::println);
 	}
 
 }

@@ -15,6 +15,12 @@ public class Test1 {
 		System.out.println("(s1 == s2) = "+(s1 == s2));
 		System.out.println("(s1 == s3) = "+(s1 == s3));
 		System.out.println("(s1 == s4) = "+(s1 == s4));
+
+		Object ob = null;
+
+		String str =  (String) ob;
+
+		System.out.println("str = " + str);
 	}
 
 }

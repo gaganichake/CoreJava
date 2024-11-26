@@ -7,7 +7,7 @@ import java.nio.file.Paths;
 import java.nio.file.StandardOpenOption;
 
 /*
- * The Files API has gotnthe writeString() method which writes a character sequence to a file. 
+ * The Files API has got the writeString() method which writes a character sequence to a file.
  * Characters are encoded into bytes using the UTF-8 charset.
  * It has also got the readString() to conveniently read from file.
  */

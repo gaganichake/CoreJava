@@ -1,4 +1,4 @@
-package com.corejava.java8.stream.terminal;
+package com.corejava.java8.stream.terminal.shortcircuit;
 
 import java.util.stream.Stream;
 

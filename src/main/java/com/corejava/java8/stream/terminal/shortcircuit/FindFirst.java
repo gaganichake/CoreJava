@@ -1,4 +1,4 @@
-package com.corejava.java8.stream.terminal;
+package com.corejava.java8.stream.terminal.shortcircuit;
 
 import java.util.OptionalInt;
 import java.util.stream.IntStream;
@@ -21,14 +21,14 @@ public class FindFirst {
 		 * terminated on finding the first element, hence short-circuited.
 		 */
 		
-		IntStream stream = IntStream.of(1, 2, 3, 4, 5, 6);
-//		IntStream stream = IntStream.of(1, 2, 6, 4, 5, 3);
-		
-		 OptionalInt opt = stream.filter(i -> i % 3 == 0).findFirst();
-		   
-		   if (opt.isPresent()) {
-		       System.out.println(opt.getAsInt());
-		   }
+//		IntStream stream = IntStream.of(1, 2, 3, 4, 5, 6);
+		IntStream stream = IntStream.of(1, 2, 6, 4, 5, 3);
+
+		OptionalInt opt = stream.filter(i -> i % 3 == 0).findFirst();
+
+		if (opt.isPresent()) {
+		   System.out.println(opt.getAsInt());
+		}
 		   
 		 /* 
 		  * Please note that, in above example IntStream.of creates a sequential 

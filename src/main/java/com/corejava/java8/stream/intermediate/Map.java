@@ -7,8 +7,8 @@ import java.util.stream.Collectors;
 /*
  * Intermediate Operation:
  * 
- * map: The map method is used to returns a stream consisting of the results of applying 
- * the given function to the elements of this stream.
+ * map: The map method is used to return a stream consisting of the results of applying
+ * the given function to the elements of this stream. Simply transformation step.
  */
 public class Map {
 
