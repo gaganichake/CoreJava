@@ -3,6 +3,7 @@ package com.corejava.classloader.breaksingleton;
 public class SingletonClass {
 
 	private static SingletonClass singletonObject;
+	private String value;
 
 	//Provide a default Private constructor
 	/** A private Constructor prevents any other class from instantiating. */
@@ -10,13 +11,15 @@ public class SingletonClass {
 	private SingletonClass() {
 		// Optional Code
 		System.out.println("Damn, you did it!!!. In " +  SingletonClass.class.getName());
+		this.value = "Some Value set by constructor";
 	}
 
 	//Create a Method for getting the reference to the Singleton Object
-	//Make the Access method Synchronized to prevent Thread Problems.
+	//Make the Access method Synchronized to prevent more than one Thread to enter.
 	public static synchronized SingletonClass getSingletonObject() {
 		if (singletonObject == null) {
 			singletonObject = new SingletonClass();
+			singletonObject.setValue("Some Value set by getSingletonObject()");
 		}
 		return singletonObject;
 	}
@@ -27,4 +30,11 @@ public class SingletonClass {
 		throw new CloneNotSupportedException();
 	}
 
+	public String getValue() {
+		return value;
+	}
+
+	public void setValue(String value) {
+		this.value = value;
+	}
 }

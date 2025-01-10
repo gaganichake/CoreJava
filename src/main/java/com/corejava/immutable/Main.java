@@ -10,5 +10,12 @@ public class Main {
 		System.out.println(im);
 		im.getMutableField().setYear(2000);
 		System.out.println(im);
+
+
+		ImmutableClassWithoutUsingFinal iMWUF = ImmutableClassWithoutUsingFinal.createNewInstance(100, "test",
+				new Date());
+		System.out.println(iMWUF);
+		iMWUF.getMutableField().setDate(2000);
+		System.out.println(iMWUF);
 	}
 }
